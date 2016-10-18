@@ -14,8 +14,10 @@ System.config({
   },
 
   map: {
+    "app": "src/app",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "components": "src/app/components",
     "core-js": "npm:core-js@1.2.7",
     "react": "npm:react@15.3.2",
     "react-dnd": "npm:react-dnd@2.1.4",
