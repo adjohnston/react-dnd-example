@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/adjohnston/react-dnd-example/issues"
   },
-  "homepage": "https://github.com/adjohnston/react-dnd-example#readme"
+  "homepage": "https://github.com/adjohnston/react-dnd-example#readme",
+  "dependencies": {
+    "jspm": "^0.16.46"
+  }
 }
