@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.layout {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.layout__area {
+  display: flex;
+  flex: 1 0 0%;
+  padding: 1rem .5rem;
+}
+
+.placeholder {
+  flex: 1 0 0%;
+  margin: 0 .5rem;
+  border: 2px dashed #ddd;
+}
+
+.card {
+  display: flex;
+  flex: 1 0 0%;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  margin: 0 .5rem;
+  padding: 1rem;
+  background: #eee;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, .15);
+}
