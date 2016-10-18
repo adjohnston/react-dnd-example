@@ -19,16 +19,20 @@ const App = createClass({
 
         <section
           className="layout__area">
-          <Card>
+          <Card
+            name="ummm">
             😨
           </Card>
-          <Card>
+          <Card
+            name="ohhh">
             😱
           </Card>
-          <Card>
+          <Card
+            name="hehe">
             😂
           </Card>
-          <Card>
+          <Card
+            name="cool">
             😎
           </Card>
         </section>

@@ -6,7 +6,9 @@ const types = config.types;
 
 const cardSource = {
   beginDrag(props) {
-    return {};
+    return {
+      name: props.name
+    };
   }
 };
 
@@ -22,7 +24,8 @@ const Card = createClass({
     const {
       connectDragSource,
       isDragging,
-      children
+      children,
+      name
     } = this.props;
 
     return connectDragSource(
