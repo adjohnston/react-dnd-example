@@ -1,5 +1,6 @@
 import React, { createClass } from 'react';
 import { DropTarget } from 'react-dnd';
+import Card from 'components/atoms/card';
 import config from 'app/config';
 
 const types = config.types;
@@ -19,15 +20,23 @@ const collect = (connect, monitor) => {
 
 const Target = createClass({
   render() {
+    let hasCard = null;
+
     const {
       connectDropTarget,
-      isOver
+      isOver,
+      card
     } = this.props;
+
+    if (card) {
+      hasCard = <Card>{card}</Card>;
+    }
 
     return connectDropTarget(
       <div
         className="placeholder"
         style={isOver ? {background: 'black'} : null}>
+        {hasCard}
       </div>
     );
   }
