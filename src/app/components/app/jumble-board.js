@@ -2,39 +2,36 @@ import React, { createClass } from 'react';
 import HTML5Backend from 'react-dnd-html5-backend';
 import { DragDropContext } from 'react-dnd';
 import Target from 'components/atoms/target';
-import Card from 'components/atoms/card';
 
 const JumbleBoard = createClass({
   render() {
+    const cards = this.props.cards;
+
     return (
       <main
         className="layout">
         <section
           className="layout__area">
-          <Target />
-          <Target />
-          <Target />
-          <Target />
+          <Target
+            card={cards[0]} />
+          <Target
+            card={cards[1]} />
+          <Target
+            card={cards[2]} />
+          <Target
+            card={cards[3]} />
         </section>
 
         <section
           className="layout__area">
-          <Card
-            name="ummm">
-            😨
-          </Card>
-          <Card
-            name="ohhh">
-            😱
-          </Card>
-          <Card
-            name="hehe">
-            😂
-          </Card>
-          <Card
-            name="cool">
-            😎
-          </Card>
+          <Target
+            card={cards[4]} />
+          <Target
+            card={cards[5]} />
+          <Target
+            card={cards[6]} />
+          <Target
+            card={cards[7]} />
         </section>
       </main>
     );
