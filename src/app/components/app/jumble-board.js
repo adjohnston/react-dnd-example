@@ -4,7 +4,7 @@ import { DragDropContext } from 'react-dnd';
 import Target from 'components/atoms/target';
 import Card from 'components/atoms/card';
 
-const App = createClass({
+const JumbleBoard = createClass({
   render() {
     return (
       <main
@@ -41,4 +41,4 @@ const App = createClass({
   }
 });
 
-export default DragDropContext(HTML5Backend)(App);
+export default DragDropContext(HTML5Backend)(JumbleBoard);

@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'app/app';
+import JumbleBoard from 'components/app/jumble-board';
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+ReactDOM.render(<JumbleBoard  />, document.querySelector('#app'));
